@@ -60,7 +60,7 @@ app.get("/api/v3/auth/app-token", (req, res) => {
       });
     }
 
-    if (notFoundAppIds.includes(creds.appId) {
+    if (notFoundAppIds.includes(creds.appId)) {
       return res.status(401).json({
         error: "invalid_app_credentials",
         message: "App authentication failed",
