@@ -84,7 +84,7 @@ app.get("/api/v3/auth/app-token", (req, res) => {
     };
 
     const token = jwt.sign(payload, PRIVATE_KEY, {
-      algorithm: "RS256", expiredIn, keyid: '_FrxfQVSlPUlvGZ5HvdkNSugQsyrdn0uqlWJGIMY_Yw'
+      algorithm: "RS256", expiresIn, keyid: '_FrxfQVSlPUlvGZ5HvdkNSugQsyrdn0uqlWJGIMY_Yw'
     });
 
     return res.json({
