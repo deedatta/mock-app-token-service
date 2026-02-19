@@ -1,6 +1,11 @@
 {
   "name": "mock-app-token-server",
   "version": "1.0.0",
+  "description": "Mock App Token Service for Sapient AI Suite",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
